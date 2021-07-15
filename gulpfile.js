@@ -97,6 +97,7 @@ assign(styles, {
 
 const scripts = () => pipeline(
   gulp.src([
+    // './node_modules/bootstrap/js/dist/'
     './node_modules/focus-visible/dist/focus-visible.js',
     paths.scripts.src,
   ]),
