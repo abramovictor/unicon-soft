@@ -21,7 +21,6 @@ import pug from 'gulp-pug-3';
 import inject from 'gulp-inject';
 import sourcemaps from 'gulp-sourcemaps';
 import cache from 'gulp-cache';
-import rename from 'gulp-rename';
 
 import { paths } from './scripts/paths.js';
 import { message, transformInjectPath, extractDir } from './scripts/utils.js';
