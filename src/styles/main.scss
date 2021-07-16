@@ -1,1 +1,7 @@
-@import './_libs.scss';
+@import './base';
+@import './variables';
+@import './mixins';
+@import './libs';
+
+// layout
+@import '../layout/footer';

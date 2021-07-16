@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // font-size: 10px;
+  height: -webkit-fill-available;
+}
+
+body {
+  // display: flex;
+  // flex-direction: column;
+  // max-width: 100%;
+  // min-height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  // font-size: 1.6rem;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // color: $primary-text-color;
+  // background-color: $primary-bg-color;
+}
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    height: -webkit-fill-available;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+input,
+button,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  appearance: none;
+}
+
+a,
+input,
+button,
+textarea,
+[tabindex] {
+
+  &:not([data-focus-visible-added]),
+  &:not([data-focus-visible-added]):focus {
+    outline: none;
+  }
+}
