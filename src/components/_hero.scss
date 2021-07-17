@@ -1,0 +1,19 @@
+.hero {
+  height: 90vh;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -55%;
+    width: 100%;
+    height: 200vh;
+    background-color: #101642;
+    transform: rotate(-15deg);
+  }
+}

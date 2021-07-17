@@ -1,0 +1,28 @@
+.header {
+  padding: 25px 0;
+  z-index: 1090;
+}
+
+.header--primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header--primary {
+  .header__link {
+    color: #fff;
+    transition: opacity 250ms;
+  }
+
+  .header__link {
+    &:not(:hover):not(.show) {
+      opacity: 0.5;
+    }
+  }
+}
+
+.header__link {
+  font-size: 14px;
+}
