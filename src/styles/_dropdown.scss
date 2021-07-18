@@ -1,19 +1,8 @@
-.dropdown-toggle {
-  display: flex;
-  align-items: center;
-}
-
 .dropdown-caret {
-  display: block;
   margin-left: 9px;
-  transition: transform 250ms;
+  vertical-align: middle;
 }
 
-.dropdown-toggle.show {
-  .dropdown-caret {
-    transform: rotate(-180deg);
-  }
-}
 
 .dropdown-menu {
   position: absolute;

@@ -1,0 +1,45 @@
+$button-font-size: 16px;
+
+.button {
+  position: relative;
+  display: inline-block;
+  line-height: $button-font-size;
+  font-size: $button-font-size;
+  font-weight: 400;
+  border-radius: 6px;
+  padding: ((40px - $button-font-size) / 2) 16px;
+  outline: none;
+}
+
+.button--primary {
+  color: #fff;
+  background-color: $red;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 250ms;
+    box-shadow: 0 3px 6px rgba(#000, 0.16);
+  }
+}
+
+.button--primary {
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: #BE0418;
+  }
+
+  &:active::before {
+    opacity: 0;
+  }
+}

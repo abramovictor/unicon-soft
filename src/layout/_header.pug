@@ -1,7 +1,14 @@
-header.header.header--primary
-  .container
-    .row.align-items-center
-      .col-auto.me-auto
+header#header.header.header--primary
+  .container-xl
+    .row.row-cols-auto.gx-lg-5.align-items-center
+      .col.d-lg-none
+        button#sidebar-toggler.header__sidebar-toggler
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0,0H24V24H0Z" fill="none"/>
+            <path d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z" fill="#646f87"/>
+          </svg>
+      
+      .col.ms-auto.ms-lg-0.me-auto
         a.header__logo(href="") 
           <svg xmlns="http://www.w3.org/2000/svg" width="209" height="34.619" viewBox="0 0 209 34.619">
             <g transform="translate(-51.829 -47.95)">
@@ -25,43 +32,50 @@ header.header.header--primary
             </g>
           </svg>
 
-      .col-auto
-        button.header__link.dropdown-toggle(data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,10") Модули
-          <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
-            <path d="M4,0,8,5H0Z" transform="translate(8 5) rotate(180)" fill="currentColor"/>
-          </svg>
+      div#header-sidebar.header__container
+        .row.gx-0.gx-lg-5.flex-column.flex-lg-row.row-cols-auto
+          .header__
 
-        ul.dropdown-menu
-          li
-            a.dropdown-item(href="#!") ijro.gov.uz
-          li
-            a.dropdown-item(href="#!") admin.ijro.uz
-          li
-            a.dropdown-item(href="#!") mf.ijro.uz
-          li
-            a.dropdown-item(href="#!") app.ijro.uz
-          li
-            a.dropdown-item(href="#!") av.ijro.uz
+          .col
+            button.header__link.dropdown-toggle(data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,10") Модули
+              <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                <path d="M4,0,8,5H0Z" transform="translate(8 5) rotate(180)" fill="currentColor"/>
+              </svg>
 
-      .col-auto
-        a.header__link(href="#!") Инструкция
-      .col-auto
-        a.header__link(href="#!") Продукты
-      .col-auto
-        button.header__link.dropdown-toggle(data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,10") Структура
-          <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
-            <path d="M4,0,8,5H0Z" transform="translate(8 5) rotate(180)" fill="currentColor"/>
-          </svg>
-          
-        ul.dropdown-menu
-          li
-            a.dropdown-item(href="#!") Руководство
-          li
-            a.dropdown-item(href="#!") О нас
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href="#!") ijro.gov.uz
+              li
+                a.dropdown-item(href="#!") admin.ijro.uz
+              li
+                a.dropdown-item(href="#!") mf.ijro.uz
+              li
+                a.dropdown-item(href="#!") app.ijro.uz
+              li
+                a.dropdown-item(href="#!") av.ijro.uz
 
-      .col-auto
-        a.header__link(href="#!") Контакты
-      .col-auto
+          .col
+            a.header__link(href="#!") Инструкция
+            
+          .col
+            a.header__link(href="#!") Продукты
+            
+          .col
+            button.header__link.dropdown-toggle(data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,10") Структура
+              <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                <path d="M4,0,8,5H0Z" transform="translate(8 5) rotate(180)" fill="currentColor"/>
+              </svg>
+              
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href="#!") Руководство
+              li
+                a.dropdown-item(href="#!") О нас
+
+          .col
+            a.header__link(href="#!") Контакты
+            
+      .col
         button.header__link.dropdown-toggle(data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,10") Ру
           <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
             <path d="M4,0,8,5H0Z" transform="translate(8 5) rotate(180)" fill="currentColor"/>

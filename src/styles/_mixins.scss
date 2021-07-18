@@ -1,5 +1,5 @@
 @mixin animated-underline {
-  @media(min-width: 768px) {
+  @include media-breakpoint-up(md) {
     padding-bottom: 3px;
     position: relative;
 

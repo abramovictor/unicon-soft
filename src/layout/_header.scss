@@ -1,28 +1,137 @@
 .header {
   padding: 25px 0;
-  z-index: 1090;
 }
 
 .header--primary {
-  position: absolute;
+  position: static;
+  z-index: 1070;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: $light;
+
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    background-color: transparent;
+  }
 }
 
 .header--primary {
-  .header__link {
-    color: #fff;
-    transition: opacity 250ms;
-  }
+  @include media-breakpoint-up(xl) {
+    .header__link {
+      color: #fff;
+      transition: opacity 250ms;
+    }
 
-  .header__link {
-    &:not(:hover):not(.show) {
-      opacity: 0.5;
+    .header__link {
+      &:not(:hover):not(.show) {
+        opacity: 0.5;
+      }
     }
   }
 }
 
+.header__sidebar-toggler {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
 .header__link {
-  font-size: 14px;
+  font-size: 16px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+  }
+}
+
+.header__logo {
+  @include media-breakpoint-down(lg) {
+    svg {
+      width: 149px;
+    }
+  }
+}
+
+// sidebar menu
+
+.header__container {
+  @include media-breakpoint-down(lg) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1090;
+    padding: 15px 0;
+    width: 250px;
+    overflow: auto;
+    background-color: #fff;
+    box-shadow: 3px 0 6px rgba(#000000, 0.16);
+    transition: transform 250ms;
+    opacity: 0;
+    transform: translateX(-100%);
+
+    &.sidebar--show {
+      opacity: 1;
+    }
+
+    &.sidebar--open {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+  }
+}
+
+
+.header__container {
+  @include media-breakpoint-down(lg) {
+
+    .header__link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+    }
+
+    .dropdown-menu {
+      position: static !important;
+      border-top: 1px solid $light-blue;
+      border-bottom: 1px solid $light-blue;
+      border-radius: 0;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    .dropdown-item {
+      font-size: 14px !important;
+      padding-left: 25px;
+    }
+
+  }
+}
+
+.header {
+  @include media-breakpoint-down(lg) {
+
+    &.overlay::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1080;
+      user-select: none;
+      opacity: 0;
+      transition: opacity 250ms;
+      background-color: rgba(#000000, 0.5);
+    }
+
+    &.overlay--show::before {
+      opacity: 1;
+    }
+
+  }
 }
