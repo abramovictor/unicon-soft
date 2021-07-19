@@ -1,31 +1,30 @@
 let isShown = false;
 
 const initializeSidebar = params => {
-  const { toggler, sidebar, header } = params;
+  const { toggler, sidebar, overlay } = params;
   const { lock: lockBodyScroll, unlock: unlockBodyScroll } = createBodyScrollManager();
 
   const open = () => {
-    header.classList.add('overlay');
-    sidebar.classList.add('sidebar--show', 'sidebar--open');
-
+    sidebar.classList.add('sidebar--show', 'sidebar--visible');
+    overlay.classList.add('overlay--show');
     lockBodyScroll();
 
     window.setTimeout(() => {
-      header.classList.add('overlay--show');
+      overlay.classList.add('overlay--visible');
       isShown = true;
     }, 0);
   };
 
   const close = () => {
-    sidebar.classList.remove('sidebar--open');
-    header.classList.remove('overlay--show');
+    sidebar.classList.remove('sidebar--show');
+    overlay.classList.remove('overlay--show');
 
-    addOnceEventListener(header, 'transitionend', () => {
-      header.classList.remove('overlay');
+    addOnceEventListener(overlay, 'transitionend', () => {
+      overlay.classList.remove('overlay--visible');
     });
 
     addOnceEventListener(sidebar, 'transitionend', () => {
-      sidebar.classList.remove('sidebar--show');
+      sidebar.classList.remove('sidebar--visible');
     });
 
     unlockBodyScroll();
@@ -43,7 +42,7 @@ const initializeSidebar = params => {
     }
   }
 
-  if (toggler && sidebar && header) {
+  if (toggler && sidebar && overlay) {
     toggler.addEventListener('click', handleTogglerClick);
   }
 
@@ -60,10 +59,10 @@ const initializeSidebar = params => {
 
 const handleWindowLoad = () => {
   const toggler = document.querySelector('#sidebar-toggler');
-  const sidebar = document.querySelector('#header-sidebar');
-  const header = document.querySelector('#header');
+  const sidebar = document.querySelector('#sidebar');
+  const overlay = document.querySelector('#overlay');
 
-  initializeSidebar({ toggler, sidebar, header });
+  initializeSidebar({ toggler, sidebar, overlay });
 };
 
 window.addEventListener('load', handleWindowLoad);

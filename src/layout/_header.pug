@@ -2,14 +2,14 @@ header#header.header.header--primary
   .container-xl
     .row.row-cols-auto.gx-lg-5.align-items-center
       .col.d-lg-none
-        button#sidebar-toggler.header__sidebar-toggler
+        button#sidebar-toggler.sidebar-toggler
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M0,0H24V24H0Z" fill="none"/>
             <path d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z" fill="#646f87"/>
           </svg>
       
       .col.ms-auto.ms-lg-0.me-auto
-        a.header__logo(href="") 
+        a.header__logo(href="/") 
           <svg xmlns="http://www.w3.org/2000/svg" width="209" height="34.619" viewBox="0 0 209 34.619">
             <g transform="translate(-51.829 -47.95)">
               <path d="M61.8,68.045l5.452,8.395a2.721,2.721,0,1,0,4.593-2.918L65.291,63.43a2.747,2.747,0,0,0-.307-.391l6.545-10.3L87.635,78.08a3.69,3.69,0,0,1,.308,3.512,3.648,3.648,0,0,1-3.316,2.143h-32.8Z" transform="translate(0 -1.165)" fill="#0f1542" fill-rule="evenodd"/>
@@ -32,10 +32,8 @@ header#header.header.header--primary
             </g>
           </svg>
 
-      div#header-sidebar.header__container
+      div#sidebar.sidebar
         .row.gx-0.gx-lg-5.flex-column.flex-lg-row.row-cols-auto
-          .header__
-
           .col
             button.header__link.dropdown-toggle(data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,10") Модули
               <svg class="dropdown-caret" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
@@ -88,3 +86,5 @@ header#header.header.header--primary
             a.dropdown-item(href="#!") Uz
           li
             a.dropdown-item(href="#!") En
+            
+div#overlay.overlay
