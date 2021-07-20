@@ -1,13 +1,5 @@
 .performance-in-numbers {
-  padding: 30px 0;
   color: #fff;
-
-  &__title {
-    font-size: 24px;
-    font-weight: 300;
-    color: #0f1542;
-    margin-bottom: 28px;
-  }
 
   &__counters {
     background-color: $dark-blue;
@@ -92,13 +84,6 @@
   }
 
   @media (min-width:992px) {
-    padding: 90px 0;
-
-    &__title {
-      font-size: 32px;
-      margin-bottom: 66px;
-    }
-
     &__counter {
       padding: 30px 0;
 

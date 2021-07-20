@@ -1,0 +1,62 @@
+.news-card {
+  padding: 24px;
+  border: 1px solid #dadce2;
+  border-radius: 6px;
+
+  &__image-container {
+    margin-bottom: 22px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    color: $dark-blue;
+    margin-bottom: 16px;
+    @include truncated-text(2);
+  }
+
+  &__excerpt {
+    font-size: 14px;
+    color: $medium-blue;
+    margin-bottom: 30px;
+    @include truncated-text(2);
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date-badge {
+    font-size: 14px;
+    padding: 6px 12px;
+    color: $medium-blue;
+    background-color: $light-blue;
+    border-radius: 6px;
+  }
+
+  &__read-more-link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $red;
+    @include animated-underline;
+
+    svg {
+      margin-left: 6px;
+    }
+  }
+
+  @media(min-width: 992px) {
+    transition: 0.2s box-shadow;
+
+    &:hover {
+      box-shadow: 0px 3px 32px rgba(#000, 0.15);
+    }
+  }
+}

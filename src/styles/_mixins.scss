@@ -21,3 +21,12 @@
     }
   }
 }
+
+@mixin truncated-text($visible-lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $visible-lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
