@@ -56,6 +56,7 @@ const server = () => {
 
 const styles = () => pipeline(
   gulp.src([
+    './node_modules/swiper/swiper-bundle.css',
     paths.styles.src,
   ]),
   sourcemaps.init(),
@@ -97,8 +98,12 @@ assign(styles, {
 
 const scripts = () => pipeline(
   gulp.src([
-    // './node_modules/bootstrap/js/dist/'
+    './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
     './node_modules/focus-visible/dist/focus-visible.js',
+    './node_modules/swiper/swiper-bundle.js',
+    './src/js/helpers.js',
+    './src/js/sidebar.js',
+    './src/js/hero-swiper.js',
     paths.scripts.src,
   ]),
   sourcemaps.init(),

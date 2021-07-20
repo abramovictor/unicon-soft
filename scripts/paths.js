@@ -25,14 +25,14 @@ export const paths = {
     dev: 'dev/js',
   },
   images: {
-    src: 'src/assets/images/**/*.{png,jpg}',
-    watch: 'src/assets/images/**/*.{png,jpg}',
+    src: 'src/assets/images/**/*.*',
+    watch: 'src/assets/images/**/*.*',
     build: 'build/assets/images',
     dev: 'dev/assets/images',
   },
   fonts: {
-    src: 'src/assets/fonts/**/*.{woff,woff2}',
-    watch: 'src/assets/fonts/**/*.{woff,woff2}',
+    src: 'src/assets/fonts/**/*.*',
+    watch: 'src/assets/fonts/**/*.*',
     build: 'build/assets/fonts',
     dev: 'dev/assets/fonts',
   },

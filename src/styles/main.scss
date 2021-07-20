@@ -1,9 +1,15 @@
-@import './base';
 @import './variables';
 @import './mixins';
 @import './libs';
+@import './base';
+
+// components
+@import './dropdown';
+@import './button';
+@import '../components/hero';
 
 // layout
+@import '../layout/header';
 @import '../layout/footer';
 
 // components

@@ -1,0 +1,133 @@
+.header {
+  padding: 25px 0;
+
+  @include media-breakpoint-down(lg) {
+    padding: 15px 0;
+  }
+}
+
+.overlay {
+  display: none;
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1070;
+    user-select: none;
+    opacity: 0;
+    transition: opacity 250ms;
+    background-color: rgba(#000000, 0.5);
+
+    &--show {
+      display: block;
+    }
+
+    &--visible {
+      opacity: 1;
+    }
+  }
+}
+
+.header--primary {
+  position: relative;
+  z-index: 1080;
+  background-color: $light;
+
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+    .header__link {
+      color: #fff;
+      transition: opacity 250ms;
+    }
+
+    .header__link {
+      &:not(:hover):not(.show) {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.header__link {
+  font-size: 16px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+  }
+}
+
+.header__logo {
+  @include media-breakpoint-down(lg) {
+    svg {
+      width: 149px;
+    }
+  }
+}
+
+// sidebar menu
+
+.sidebar-toggler {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+$sidebar-width: 250px;
+
+.sidebar {
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1090;
+    width: $sidebar-width;
+    height: calc(100vh - 68px);
+    padding: 15px 0;
+    overflow: auto;
+    background-color: $light;
+    box-shadow: 3px 6px 6px rgba(#000000, 0.16);
+    transition: transform 250ms;
+    opacity: 0;
+    transform: translateX(-100%);
+
+    &.sidebar--visible {
+      opacity: 1;
+    }
+
+    &.sidebar--show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .header__link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+    }
+
+    .dropdown-menu {
+      position: static !important;
+      border-top: 1px solid $light-blue;
+      border-bottom: 1px solid $light-blue;
+      border-radius: 0;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    .dropdown-item {
+      font-size: 14px !important;
+      padding-left: 25px;
+    }
+  }
+}
