@@ -56,8 +56,20 @@
         transition: color 0.2s;
       }
 
+      a rect {
+        transition: fill 0.2s;
+      }
+
       a:hover {
         color: $red;
+      }
+
+      a:active {
+        color: #fff;
+      }
+
+      a:active rect {
+        fill: $red;
       }
     }
 
