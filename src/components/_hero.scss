@@ -28,6 +28,7 @@
 
 .hero-swiper {
   .swiper-slide {
+
     @include media-breakpoint-up(xl) {
       padding-top: 50px;
     }
@@ -63,6 +64,8 @@
   &__image {
     display: block;
     width: 100%;
+    max-height: 500px;
+    object-fit: contain;
   }
 
   &__title {
