@@ -4,34 +4,39 @@ const initializeSidebar = params => {
   const { toggler, sidebar, overlay } = params;
   const { lock: lockBodyScroll, unlock: unlockBodyScroll } = createBodyScrollManager();
 
+  let openTimeoutId;
   const open = () => {
-    sidebar.classList.add('sidebar--show', 'sidebar--visible');
+    sidebar.classList.add('sidebar--show');
     overlay.classList.add('overlay--show');
     lockBodyScroll();
 
-    window.setTimeout(() => {
+    if (openTimeoutId) {
+      clearTimeout(openTimeoutId);
+    }
+
+    openTimeoutId = setTimeout(() => {
       overlay.classList.add('overlay--visible');
+      sidebar.classList.add('sidebar--visible');
       isShown = true;
     }, 0);
   };
 
+  let closeTimeoutId;
   const close = () => {
-    sidebar.classList.remove('sidebar--show');
-    overlay.classList.remove('overlay--show');
+    sidebar.classList.remove('sidebar--visible');
+    overlay.classList.remove('overlay--visible');
 
-    addOnceEventListener(overlay, 'transitionend', () => {
-      overlay.classList.remove('overlay--visible');
-    });
+    if (closeTimeoutId) {
+      clearTimeout(closeTimeoutId);
+    }
 
-    addOnceEventListener(sidebar, 'transitionend', () => {
-      sidebar.classList.remove('sidebar--visible');
-    });
+    closeTimeoutId = setTimeout(() => {
+      overlay.classList.remove('overlay--show');
+      sidebar.classList.remove('sidebar--show');
+      isShown = false;
+    }, 250);
 
     unlockBodyScroll();
-
-    window.setTimeout(() => {
-      isShown = false;
-    }, 0);
   };
 
   const handleTogglerClick = () => {
