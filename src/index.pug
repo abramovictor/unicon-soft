@@ -1,8 +1,12 @@
 extends /layout/_base.pug
+include /mixins/_header.pug
+include /mixins/_section-separator.pug
 
 block head
   title Unicon Soft
 
 block body
+  +header(true)
   include /components/_hero.pug
+  +section-separator('rtl')
   include /components/_performance-in-numbers.pug

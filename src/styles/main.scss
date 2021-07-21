@@ -3,15 +3,16 @@
 @import './libs';
 @import './base';
 
+// mixins
+@import '../mixins/header';
+@import '../mixins/section-separator';
+
+// layout
+@import '../layout/footer';
+
 // components
 @import './dropdown';
 @import './button';
 @import '../components/hero';
-
-// layout
-@import '../layout/header';
-@import '../layout/footer';
-
-// components
 @import '../components/_performance-in-numbers';
 @import '../components/_news-card';
