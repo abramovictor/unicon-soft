@@ -104,6 +104,7 @@ const scripts = () => pipeline(
     './src/js/helpers.js',
     './src/js/sidebar.js',
     './src/js/hero-swiper.js',
+    './src/js/section-swiper.js',
     paths.scripts.src,
   ]),
   sourcemaps.init(),

@@ -72,12 +72,24 @@ textarea,
 }
 
 // Global component styles
+.logo-container {
+  @include media-breakpoint-down(lg) {
+    svg {
+      width: 149px;
+    }
+  }
+}
+
 .section-content {
   padding: 30px 0;
-  
+
   @media(min-width: 992px) {
     padding: 90px 0;
   }
+}
+
+.section-content:nth-of-type(even) {
+  background-color: $light;
 }
 
 .section-title {
@@ -90,4 +102,11 @@ textarea,
     font-size: 32px;
     margin-bottom: 66px;
   }
+}
+
+.section-swiper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: -50px;
+  margin-bottom: -50px;
 }

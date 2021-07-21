@@ -7,6 +7,9 @@ block head
 
 block body
   +header(true)
-  include /components/_hero.pug
+  include /components/_home-hero.pug
   +section-separator('rtl')
-  include /components/_performance-in-numbers.pug
+  include /components/_home-services.pug
+  +section-separator('rtl')
+  include /components/_home-performance-in-numbers.pug
+  +section-separator('ltr')

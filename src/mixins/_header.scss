@@ -65,14 +65,6 @@
   }
 }
 
-.header__logo {
-  @include media-breakpoint-down(lg) {
-    svg {
-      width: 149px;
-    }
-  }
-}
-
 // sidebar menu
 
 .sidebar-toggler {
