@@ -1,0 +1,44 @@
+.products {
+  &__product {
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #dadce2;
+    border-radius: 6px;
+  }
+
+  &__image-container {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 22px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    @include truncated-text(2);
+  }
+
+  &__description-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $medium-blue;
+  }
+
+  @media(min-width: 992px) {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__description-text {
+      font-size: 15px;
+    }
+  }
+}
