@@ -43,7 +43,7 @@
   &__description-content,
   &__description-contact,
   &__description-email {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     color: $medium-blue;
     display: inline-block;
@@ -63,6 +63,12 @@
   @media(min-width: 992px) {
     &__name {
       font-size: 20px;
+    }
+
+    &__description-content,
+    &__description-contact,
+    &__description-email {
+      font-size: 15px;
     }
   }
 }
