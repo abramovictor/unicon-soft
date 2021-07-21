@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="landmark-icon" transform="translate(-992 -256)">
+    <rect id="Rectangle_142" data-name="Rectangle 142" width="24" height="24" rx="6" transform="translate(992 256)" fill="#f1f1f4"/>
+    <g id="location_on_black_24dp" transform="translate(996 260)">
+      <path id="Path_107" data-name="Path 107" d="M0,0H16V16H0Z" fill="none"/>
+      <path id="Path_108" data-name="Path 108" d="M9.646,2A4.65,4.65,0,0,0,5,6.661c0,3.5,4.646,8.656,4.646,8.656s4.646-5.16,4.646-8.656A4.65,4.65,0,0,0,9.646,2Zm0,6.325a1.665,1.665,0,1,1,1.659-1.665A1.663,1.663,0,0,1,9.646,8.325Z" transform="translate(-1.646 -0.658)" fill="#646f87"/>
+    </g>
+  </g>
+</svg>

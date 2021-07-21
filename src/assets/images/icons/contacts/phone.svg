@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="phone" transform="translate(-992 -472)">
+    <rect id="Rectangle_367" data-name="Rectangle 367" width="24" height="24" rx="6" transform="translate(992 472)" fill="#f1f1f4"/>
+    <g id="call_black_24dp" transform="translate(996 476)">
+      <path id="Path_103" data-name="Path 103" d="M0,0H16V16H0Z" fill="none"/>
+      <path id="Path_104" data-name="Path 104" d="M14.335,11.25a7.625,7.625,0,0,1-2.352-.373.651.651,0,0,0-.673.16l-1.046,1.313A10.118,10.118,0,0,1,5.672,7.8l1.3-1.106a.68.68,0,0,0,.16-.68A7.432,7.432,0,0,1,6.758,3.66.666.666,0,0,0,6.1,3H3.793C3.433,3,3,3.16,3,3.66A11.43,11.43,0,0,0,14.335,14.995a.7.7,0,0,0,.66-.786v-2.3a.666.666,0,0,0-.66-.66Z" transform="translate(-0.997 -0.997)" fill="#646f87"/>
+    </g>
+  </g>
+</svg>

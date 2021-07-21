@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="fax" transform="translate(-992 -328)">
+    <rect id="Rectangle_365" data-name="Rectangle 365" width="24" height="24" rx="6" transform="translate(992 328)" fill="#f1f1f4"/>
+    <g id="print_black_24dp" transform="translate(996 332)">
+      <path id="Path_109" data-name="Path 109" d="M0,0H16V16H0Z" fill="none"/>
+      <path id="Path_110" data-name="Path 110" d="M13.324,6.329H4a2,2,0,0,0-2,2V12.32H4.664v2.663h7.993V12.32h2.664V8.326A2,2,0,0,0,13.324,6.329Zm-2,7.323H6V10.323h5.329Zm2-4.66a.666.666,0,1,1,.666-.666A.668.668,0,0,1,13.324,8.992ZM12.658,3H4.664V5.663h7.993Z" transform="translate(-0.661 -0.992)" fill="#646f87"/>
+    </g>
+  </g>
+</svg>

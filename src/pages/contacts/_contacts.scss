@@ -1,0 +1,56 @@
+.contacts {
+  &__content {
+    padding: 20px;
+    border: 1px solid #dadce2;
+    border-radius: 6px;
+  }
+
+  &__map-container {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  &__map {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__entry {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__entry-title {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: $medium-blue;
+  }
+
+  &__entry-data {
+    font-size: 15px;
+    font-weight: 400;
+    color: $dark-blue;
+  }
+
+  &__entry-data--long {
+    display: block;
+  }
+
+  &__entry-data[href^="tel:"],
+  &__entry-data[href^="mailto:"] {
+    @include animated-underline;
+  }
+
+  &__entry-data[href^="mailto:"] {
+    color: $red;
+  }
+
+  @media(min-width: 768px) {
+    &__entry-data--long {
+      display: inline-block;
+    }
+  }
+}

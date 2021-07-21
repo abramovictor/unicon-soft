@@ -1,0 +1,107 @@
+extends /layout/_base.pug
+
+block head
+  title Контакты | Unicon Soft
+
+block body
+  .container
+    section.section-content.contacts
+      h1.section-title Контакты
+      .contacts__content
+        .row.gy-4.gy-xl-0
+          .col-xl-6
+            .contacts__map-container
+              img.contacts__map(src="/assets/images/map-placeholder.jpg")
+          .col-xl-6
+            .contacts__entry
+              .row.gx-3
+                .col-auto
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="landmark-icon" transform="translate(-992 -256)">
+                      <rect id="Rectangle_142" data-name="Rectangle 142" width="24" height="24" rx="6" transform="translate(992 256)" fill="#f1f1f4"/>
+                      <g id="location_on_black_24dp" transform="translate(996 260)">
+                        <path id="Path_107" data-name="Path 107" d="M0,0H16V16H0Z" fill="none"/>
+                        <path id="Path_108" data-name="Path 108" d="M9.646,2A4.65,4.65,0,0,0,5,6.661c0,3.5,4.646,8.656,4.646,8.656s4.646-5.16,4.646-8.656A4.65,4.65,0,0,0,9.646,2Zm0,6.325a1.665,1.665,0,1,1,1.659-1.665A1.663,1.663,0,0,1,9.646,8.325Z" transform="translate(-1.646 -0.658)" fill="#646f87"/>
+                      </g>
+                    </g>
+                  </svg>
+                .col-auto
+                  p.contacts__entry-title Наш адрес
+                  p.contacts__entry-data.contacts__entry-data--long 100084, Узбекистон, Ташкент,
+                  p.contacts__entry-data.contacts__entry-data--long Богишамол кучаси, 7а-уй
+            .contacts__entry
+              .row.gx-3
+                .col-auto
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="fax" transform="translate(-992 -328)">
+                      <rect id="Rectangle_365" data-name="Rectangle 365" width="24" height="24" rx="6" transform="translate(992 328)" fill="#f1f1f4"/>
+                      <g id="print_black_24dp" transform="translate(996 332)">
+                        <path id="Path_109" data-name="Path 109" d="M0,0H16V16H0Z" fill="none"/>
+                        <path id="Path_110" data-name="Path 110" d="M13.324,6.329H4a2,2,0,0,0-2,2V12.32H4.664v2.663h7.993V12.32h2.664V8.326A2,2,0,0,0,13.324,6.329Zm-2,7.323H6V10.323h5.329Zm2-4.66a.666.666,0,1,1,.666-.666A.668.668,0,0,1,13.324,8.992ZM12.658,3H4.664V5.663h7.993Z" transform="translate(-0.661 -0.992)" fill="#646f87"/>
+                      </g>
+                    </g>
+                  </svg>
+                .col-auto
+                  p.contacts__entry-title Факс
+                  a.contacts__entry-data(href="#!") (998 71) 235 9309
+            .contacts__entry
+              .row.gx-3
+                .col-auto
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="fax" transform="translate(-992 -328)">
+                      <rect id="Rectangle_365" data-name="Rectangle 365" width="24" height="24" rx="6" transform="translate(992 328)" fill="#f1f1f4"/>
+                      <g id="print_black_24dp" transform="translate(996 332)">
+                        <path id="Path_109" data-name="Path 109" d="M0,0H16V16H0Z" fill="none"/>
+                        <path id="Path_110" data-name="Path 110" d="M13.324,6.329H4a2,2,0,0,0-2,2V12.32H4.664v2.663h7.993V12.32h2.664V8.326A2,2,0,0,0,13.324,6.329Zm-2,7.323H6V10.323h5.329Zm2-4.66a.666.666,0,1,1,.666-.666A.668.668,0,0,1,13.324,8.992ZM12.658,3H4.664V5.663h7.993Z" transform="translate(-0.661 -0.992)" fill="#646f87"/>
+                      </g>
+                    </g>
+                  </svg>
+                .col-auto
+                  p.contacts__entry-title Факс Девонхона
+                  a.contacts__entry-data(href="#!") (998 71) 235 9309
+            .contacts__entry
+              .row.gx-3
+                .col-auto
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="phone" transform="translate(-992 -472)">
+                      <rect id="Rectangle_367" data-name="Rectangle 367" width="24" height="24" rx="6" transform="translate(992 472)" fill="#f1f1f4"/>
+                      <g id="call_black_24dp" transform="translate(996 476)">
+                        <path id="Path_103" data-name="Path 103" d="M0,0H16V16H0Z" fill="none"/>
+                        <path id="Path_104" data-name="Path 104" d="M14.335,11.25a7.625,7.625,0,0,1-2.352-.373.651.651,0,0,0-.673.16l-1.046,1.313A10.118,10.118,0,0,1,5.672,7.8l1.3-1.106a.68.68,0,0,0,.16-.68A7.432,7.432,0,0,1,6.758,3.66.666.666,0,0,0,6.1,3H3.793C3.433,3,3,3.16,3,3.66A11.43,11.43,0,0,0,14.335,14.995a.7.7,0,0,0,.66-.786v-2.3a.666.666,0,0,0-.66-.66Z" transform="translate(-0.997 -0.997)" fill="#646f87"/>
+                      </g>
+                    </g>
+                  </svg>
+                .col-auto
+                  p.contacts__entry-title Телефон доверия
+                  a.contacts__entry-data(href="tel:+998712359309") (998 71) 235 9309
+            .contacts__entry
+              .row.gx-3
+                .col-auto
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="phone" transform="translate(-992 -472)">
+                      <rect id="Rectangle_367" data-name="Rectangle 367" width="24" height="24" rx="6" transform="translate(992 472)" fill="#f1f1f4"/>
+                      <g id="call_black_24dp" transform="translate(996 476)">
+                        <path id="Path_103" data-name="Path 103" d="M0,0H16V16H0Z" fill="none"/>
+                        <path id="Path_104" data-name="Path 104" d="M14.335,11.25a7.625,7.625,0,0,1-2.352-.373.651.651,0,0,0-.673.16l-1.046,1.313A10.118,10.118,0,0,1,5.672,7.8l1.3-1.106a.68.68,0,0,0,.16-.68A7.432,7.432,0,0,1,6.758,3.66.666.666,0,0,0,6.1,3H3.793C3.433,3,3,3.16,3,3.66A11.43,11.43,0,0,0,14.335,14.995a.7.7,0,0,0,.66-.786v-2.3a.666.666,0,0,0-.66-.66Z" transform="translate(-0.997 -0.997)" fill="#646f87"/>
+                      </g>
+                    </g>
+                  </svg>
+                .col-auto
+                  p.contacts__entry-title Колл-центр
+                  a.contacts__entry-data(href="tel:+998712004646") (998 71) 200 4646
+            .contacts__entry
+              .row.gx-3
+                .col-auto
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="email" transform="translate(-992 -616)">
+                      <rect id="Rectangle_369" data-name="Rectangle 369" width="24" height="24" rx="6" transform="translate(992 616)" fill="#f1f1f4"/>
+                      <g id="email_black_24dp" transform="translate(996 620)">
+                        <path id="Path_105" data-name="Path 105" d="M0,0H16V16H0Z" fill="none"/>
+                        <path id="Path_106" data-name="Path 106" d="M14,4H3.333A1.332,1.332,0,0,0,2.007,5.333l-.007,8a1.337,1.337,0,0,0,1.333,1.333H14a1.337,1.337,0,0,0,1.333-1.333v-8A1.337,1.337,0,0,0,14,4Zm0,2.667L8.667,10,3.333,6.667V5.333L8.667,8.667,14,5.333Z" transform="translate(-0.667 -1.333)" fill="#646f87"/>
+                      </g>
+                    </g>
+                  </svg>
+                .col-auto
+                  p.contacts__entry-title Эл. почта
+                  a.contacts__entry-data(href="mailto:info@unicon.uz") info@unicon.uz
+
