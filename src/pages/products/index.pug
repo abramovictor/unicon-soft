@@ -4,14 +4,15 @@ block head
   title Продукты | Unicon Soft
 
 block body
-  .container-xl
+  .container
     section.section-content.products
       h1.section-title Продукты
-      .row.justify-content-center.justify-content-md-start
-        .col-12.mb-3.col-sm-8.col-md-6
+      .row.gy-4.justify-content-center.justify-content-md-start
+        .col-sm-10.col-md-6
           .products__product
             .products__image-container
               img.products__image(src="/assets/images/products-placeholder.jpg")
             .products__description
-              h3.products__title Название этого проекта 
+              h3.products__description-title Название этого проекта 
               p.products__description-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. 
+            a.button.button--primary(href="/products/details") Узнать больше

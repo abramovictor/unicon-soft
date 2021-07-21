@@ -1,0 +1,41 @@
+.products-details {
+  &__image-container {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__description-entry {
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__description-entry-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  &__description-entry-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $medium-blue;
+  }
+
+  @media(min-width: 992px) {
+    &__description-entry-title {
+      font-size: 18px;
+    }
+
+    &__description-entry-text {
+      font-size: 15px;
+    }
+  }
+}
