@@ -27,6 +27,15 @@
 }
 
 .hero-swiper {
+  .hero-swiper__navigation {
+    padding: 25px 0;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 15px;
+      padding-bottom: 75px;
+    }
+  }
+
   .swiper-slide {
     @include media-breakpoint-up(xl) {
       padding-top: 88px;
