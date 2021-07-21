@@ -1,0 +1,68 @@
+.management {
+  &__card {
+    padding: 24px;
+    border: 1px solid #dadce2;
+    border-radius: 6px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__image-container {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 400;
+    color: $dark-blue;
+    margin-bottom: 20px;
+  }
+
+  &__description-entry {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__description-title {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: $dark-blue;
+  }
+
+  &__description-content,
+  &__description-contact,
+  &__description-email {
+    font-size: 15px;
+    font-weight: 300;
+    color: $medium-blue;
+    display: inline-block;
+  }
+
+  &__description-contact[href^="tel:"],
+  &__description-email {
+    @include animated-underline;
+  }
+
+  &__description-contact {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  @media(min-width: 992px) {
+    &__name {
+      font-size: 20px;
+    }
+  }
+}
