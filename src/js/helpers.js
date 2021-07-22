@@ -22,12 +22,4 @@
       }
     }
   };
-
-  window['addOnceEventListener'] = (object, type, handler) => {
-    object.addEventListener(type, function once(event) {
-      handler.call(object, event);
-
-      object.removeEventListener(type, once);
-    });
-  };
 })();
