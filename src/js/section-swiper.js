@@ -30,7 +30,7 @@
       swiper = new Swiper(swiperElement, {
         loop: true,
         autoplay: false,
-        spaceBetween: 24,
+        spaceBetween: 15,
         slidesPerView: 1.2,
         centeredSlides: true,
         pagination: { el: swiperPagination },
@@ -46,7 +46,7 @@
       swiper?.destroy();
     };
 
-    const mql = window.matchMedia('(min-width: 992px)');
+    const mql = window.matchMedia('(min-width: 768px)');
     let hasBeenInitialized = false;
 
     const handleMQLListener = () => {

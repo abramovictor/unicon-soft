@@ -88,7 +88,7 @@ textarea,
   }
 }
 
-.section-content:nth-of-type(even) {
+.section-content--light {
   background-color: $light;
 }
 
@@ -97,18 +97,70 @@ textarea,
   font-weight: 400;
   color: #0f1542;
   margin-bottom: 28px;
+  text-align: center;
 
   @media(min-width: 992px) {
     font-size: 32px;
     margin-bottom: 66px;
+    text-align: left;
   }
 }
 
 .section-swiper {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: -50px;
-  margin-bottom: -50px;
+  @include media-breakpoint-up(md) {
+    padding: 50px;
+    margin: -50px;
+  }
+}
+
+.section-swiper {
+  .swiper-wrapper {
+    width: auto;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .swiper-pagination {
+    position: static;
+    padding-top: 24px;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid #DADCE2;
+    background-color: #FEFEFE;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $red;
+    opacity: 0;
+  }
+
+  .swiper-pagination-bullet-active {
+    border-color: $red;
+
+    &.swiper-pagination-bullet::before {
+      opacity: 1;
+    }
+  }
 }
 
 .breadcrumps {
@@ -146,7 +198,7 @@ textarea,
 
 .page-content-section {
   margin-bottom: 40px;
-  
+
   @media(min-width: 992px) {
     margin-bottom: 70px;
   }
