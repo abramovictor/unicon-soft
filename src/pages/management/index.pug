@@ -1,12 +1,17 @@
 extends /layout/_base.pug
+include /mixins/_header.pug
 
 block head
   title Руководство | Unicon Soft
 
 block body
+  +header
   .container
-    section.section-content.management
-      h1.section-title Руководство
+    .breadcrumps
+      a.breadcrumps__crumb(href="/") Главная
+      a.breadcrumps__crumb Структура
+    section.management.page-content-section
+      h1.page-content-title Руководство
       .management__cards
         .management__card
           .row

@@ -57,7 +57,7 @@ mixin header(isPrimary=false)
               a.header__link(href="#!") Инструкция
               
             .col
-              a.header__link(href="#!") Продукты
+              a.header__link(href="/products") Продукты
               
             .col
               button.header__link.dropdown-toggle(data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,10") Структура
@@ -67,12 +67,12 @@ mixin header(isPrimary=false)
                 
               ul.dropdown-menu
                 li
-                  a.dropdown-item(href="#!") Руководство
+                  a.dropdown-item(href="/management") Руководство
                 li
-                  a.dropdown-item(href="#!") О нас
+                  a.dropdown-item(href="/about-us") О нас
 
             .col
-              a.header__link(href="#!") Контакты
+              a.header__link(href="/contacts") Контакты
               
         .col
           button.header__link.dropdown-toggle(data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-offset="0,10") Ру

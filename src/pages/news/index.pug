@@ -7,8 +7,11 @@ block head
 block body
   +header
   .container
-    section.section-content
-      h1.section-title Новости
+    .breadcrumps
+      a.breadcrumps__crumb(href="/") Главная
+      a.breadcrumps__crumb Новости
+    section.page-content-section
+      h1.page-content-title Новости
       .row.gy-4.justify-content-center.justify-content-md-start
         .col-sm-10.col-md-6.col-lg-4.col-xxl-3
           include /components/_news-card.pug

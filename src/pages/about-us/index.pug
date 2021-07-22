@@ -1,12 +1,17 @@
 extends /layout/_base.pug
+include /mixins/_header.pug
 
 block head
   title О нас | Unicon Soft
 
 block body
+  +header
   .container
-    section.section-content.about-us
-      h1.section-title О нас
+    .breadcrumps
+      a.breadcrumps__crumb(href="/") Главная
+      a.breadcrumps__crumb О нас
+    section.about-us.page-content-section
+      h1.page-content-title О нас
       .about-us__content
         .about-us__top-panel
           h2.about-us__company-name Unicon-Soft 

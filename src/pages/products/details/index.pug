@@ -1,12 +1,18 @@
 extends /layout/_base.pug
+include /mixins/_header.pug
 
 block head
   title Проект 1 | Unicon Soft
 
 block body
+  +header
   .container
-    section.section-content.products-details
-      h1.section-title Проект 1
+    .breadcrumps
+      a.breadcrumps__crumb(href="/") Главная
+      a.breadcrumps__crumb(href="/products") Продукты
+      a.breadcrumps__crumb Проект 1
+    section.products-details.page-content-section
+      h1.page-content-title Проект 1
       .row.gy-4.justify-content-center.gy-lg-0.gx-lg-5.justify-content-lg-start
         .col-lg-5
           .products-details__image-container

@@ -1,12 +1,17 @@
 extends /layout/_base.pug
+include /mixins/_header.pug
 
 block head
   title Контакты | Unicon Soft
 
 block body
+  +header
   .container
-    section.section-content.contacts
-      h1.section-title Контакты
+    .breadcrumps
+      a.breadcrumps__crumb(href="/") Главная
+      a.breadcrumps__crumb Контакты
+    section.contacts.page-content-section
+      h1.page-content-title Контакты
       .contacts__content
         .row.gy-4.gy-xl-0
           .col-xl-6
