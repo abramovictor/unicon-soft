@@ -48,9 +48,7 @@
       }
     }
 
-    if (toggler && sidebar && overlay) {
-      toggler.addEventListener('click', handleTogglerClick);
-    }
+    toggler.addEventListener('click', handleTogglerClick);
 
     const handleDocumentClick = event => {
       const { target } = event;
@@ -68,7 +66,9 @@
     const sidebar = document.querySelector('#sidebar');
     const overlay = document.querySelector('#overlay');
 
-    initializeSidebar({ toggler, sidebar, overlay });
+    if (toggler && sidebar && overlay) {
+      initializeSidebar({ toggler, sidebar, overlay });
+    }
   };
 
   window.addEventListener('load', handleWindowLoad);

@@ -1,12 +1,17 @@
 (() => {
-  const swiper = new Swiper('#hero-swiper', {
+  const swiperElement = document.querySelector('#hero-swiper');
+
+  if (!swiperElement) {
+    return;
+  }
+
+  const swiper = new Swiper(swiperElement, {
     loop: true,
 
     // If we need pagination
     pagination: {
       el: '#hero-swiper .swiper-pagination',
       type: 'custom',
-
 
       renderCustom: (_, current, total) => {
         return Array.from({ length: total }, (_, index) => {
@@ -37,7 +42,6 @@
 
   const handleSwiperClick = event => {
     const { target } = event;
-
 
     if (target.classList.contains('swiper-bullet')) {
       const numberOfSlide = Number(target.getAttribute('data-bullet-order'));
