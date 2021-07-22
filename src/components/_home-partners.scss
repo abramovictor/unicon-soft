@@ -25,6 +25,7 @@
 
   @include media-breakpoint-up(md) {
     flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 
