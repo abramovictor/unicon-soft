@@ -3,18 +3,20 @@
 @import './libs';
 @import './base';
 
-// components
-@import './dropdown';
-@import './button';
-@import '../components/hero';
+// mixins
+@import '../mixins/header';
+@import '../mixins/section-separator';
 
 // layout
-@import '../layout/header';
 @import '../layout/footer';
 
 // components
-@import '../components/_performance-in-numbers';
+@import './dropdown';
+@import './button';
 @import '../components/_news-card';
+@import '../components/_home-hero';
+@import '../components/_home-services';
+@import '../components/_home-performance-in-numbers';
 
 // pages
 @import '../pages/news/details/_news-details';

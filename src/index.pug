@@ -1,8 +1,15 @@
 extends /layout/_base.pug
+include /mixins/_header.pug
+include /mixins/_section-separator.pug
 
 block head
   title Unicon Soft
 
 block body
-  include /components/_hero.pug
-  include /components/_performance-in-numbers.pug
+  +header(true)
+  include /components/_home-hero.pug
+  +section-separator('rtl')
+  include /components/_home-services.pug
+  +section-separator('rtl')
+  include /components/_home-performance-in-numbers.pug
+  +section-separator('ltr')

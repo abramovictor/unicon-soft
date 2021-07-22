@@ -1,9 +1,11 @@
 extends /layout/_base.pug
+include /mixins/_header.pug
 
 block head
   title Новости | Unicon Soft
 
 block body
+  +header
   .container
     section.section-content
       h1.section-title Новости

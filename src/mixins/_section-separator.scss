@@ -1,0 +1,29 @@
+.section-separator {
+  position: relative;
+  border: none;
+  height: 2px;
+
+  &:not(&--right-to-left) {
+    background-image: linear-gradient(to right, #646F87, #fff);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 278px;
+      height: 100%;
+      background-color: $red;
+    }
+  }
+
+
+  &--right-to-left {
+    background-image: linear-gradient(to left, #646F87, #fff);
+
+    &::before {
+      left: auto;
+      right: 0;
+    }
+  }
+}

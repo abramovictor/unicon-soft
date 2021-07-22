@@ -2,8 +2,10 @@
   color: #fff;
 
   &__counters {
-    background-color: $dark-blue;
+    background-color: #0F1542;
     border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 16px 20px rgba(#000000, 0.16);
   }
 
   &__counter {
@@ -11,6 +13,11 @@
     padding: 20px 0;
     text-align: center;
     position: relative;
+    transition: background-color 250ms;
+
+    &:hover {
+      background-color: #2A3167;
+    }
 
     span {
       display: block;
