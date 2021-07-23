@@ -6,14 +6,16 @@
   "type": "module",
   "dependencies": {
     "bootstrap": "^5.0.2",
+    "countup.js": "^2.0.7",
     "focus-visible": "^5.2.0",
     "node-sass-import-once": "^1.2.0",
+    "scrollreveal": "^4.0.9",
     "swiper": "^6.7.5"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.27.4",
     "del": "^5.1.0",
     "event-stream": "^4.0.1",
     "gulp": "^4.0.2",
