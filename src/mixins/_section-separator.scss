@@ -5,17 +5,20 @@
   margin-top: -1px;
   margin-bottom: -1px;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 278px;
+    height: 100%;
+    background-color: $red;
+  }
+
   &:not(&--right-to-left) {
     background-image: linear-gradient(to right, #646F87, #fff);
 
     &::before {
-      content: '';
-      position: absolute;
-      top: 0;
       left: 0;
-      width: 278px;
-      height: 100%;
-      background-color: $red;
     }
   }
 
@@ -24,7 +27,6 @@
     background-image: linear-gradient(to left, #646F87, #fff);
 
     &::before {
-      left: auto;
       right: 0;
     }
   }

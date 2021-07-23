@@ -44,7 +44,7 @@
   border-radius: 5px;
   border: 1px solid #EAEBEE;
   background-color: #fff;
-  transition: background-color 250ms, border-color 250ms;
+  transition: background-color 200ms, border-color 200ms;
 
   &::before {
     content: '';
@@ -56,7 +56,7 @@
     border-radius: 5px;
     box-shadow: 10px 24px 12px rgba(#111742, 0.15);
     opacity: 0;
-    transition: opacity 250ms;
+    transition: opacity 200ms;
   }
 }
 
@@ -72,7 +72,7 @@
     border-radius: 12px 12px 0 12px;
     color: #646F87;
     background-color: rgba(#646f87, 0.1);
-    transition: background-color 250ms, color 250ms;
+    transition: background-color 200ms, color 200ms;
 
     svg {
       max-width: 28px;
@@ -106,7 +106,7 @@
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 400;
-    transition: color 250ms;
+    transition: color 200ms;
     @include truncated-text(2);
 
     @include media-breakpoint-up(lg) {
@@ -118,7 +118,7 @@
 
   &__description {
     color: $medium-blue;
-    transition: color 250ms;
+    transition: color 200ms;
   }
 }
 

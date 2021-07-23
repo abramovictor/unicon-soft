@@ -5,7 +5,7 @@
   padding: 24px;
   border-radius: 5px;
   background-color: #F1F1F4;
-  transition: background-color 250ms;
+  transition: background-color 200ms;
 
   &::before {
     content: '';
@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 32px;
-    transition: color 250ms;
+    transition: color 200ms;
     color: #646f87;
   }
 
@@ -88,7 +88,7 @@
     font-size: 16px;
     color: $dark-blue;
     font-weight: 500;
-    transition: color 250ms;
+    transition: color 200ms;
     @include truncated-text(2);
   }
 
@@ -96,6 +96,6 @@
     color: $medium-blue;
     font-size: 14px;
     line-height: 24px;
-    transition: color 250ms;
+    transition: color 200ms;
   }
 }

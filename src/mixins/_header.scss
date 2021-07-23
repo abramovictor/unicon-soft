@@ -19,7 +19,7 @@
     z-index: 1070;
     user-select: none;
     opacity: 0;
-    transition: opacity 250ms;
+    transition: opacity 200ms;
     background-color: rgba(#000000, 0.5);
 
     &--show {
@@ -46,7 +46,7 @@
 
     .header__link {
       color: #fff;
-      transition: opacity 250ms;
+      transition: opacity 200ms;
     }
 
     .header__link {
@@ -88,7 +88,7 @@ $sidebar-width: 250px;
     overflow: auto;
     background-color: $light;
     box-shadow: 3px 6px 6px rgba(#000000, 0.16);
-    transition: transform 250ms, opacity 250ms;
+    transition: transform 200ms, opacity 200ms;
     transform: translateX(-110%);
 
     &.sidebar--visible {
