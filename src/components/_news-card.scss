@@ -2,7 +2,6 @@
   padding: 24px;
   border: 1px solid #dadce2;
   border-radius: 6px;
-  transition: 0.2s box-shadow;
 
   &__image-container {
     border-radius: 6px;
@@ -56,14 +55,25 @@
       margin-left: 6px;
     }
   }
+}
 
-  @media(min-width: 992px) {
-    &:hover {
-      box-shadow: 9px 24px 12px rgba(#0F1542, 0.05);
+.swiper-container {
+  .news-card {
+    transition: box-shadow 350ms, transform 350ms;
+
+    @media(min-width: 992px) {
+      &:hover {
+        box-shadow: 9px 24px 12px rgba(#0F1542, 0.05);
+      }
     }
   }
 }
 
+.swiper-container:not(.swiper-container-initialized) {
+  .news-card:hover {
+    transform: translate(-5px, -12px);
+  }
+}
 
 .swiper-container-initialized {
   .swiper-slide-active {

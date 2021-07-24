@@ -44,7 +44,7 @@
   border-radius: 5px;
   border: 1px solid #EAEBEE;
   background-color: #fff;
-  transition: background-color 200ms, border-color 200ms;
+  transition: background-color 350ms, border-color 350ms, transform 350ms;
 
   &::before {
     content: '';
@@ -56,7 +56,7 @@
     border-radius: 5px;
     box-shadow: 10px 24px 12px rgba(#111742, 0.15);
     opacity: 0;
-    transition: opacity 200ms;
+    transition: opacity 350ms;
   }
 }
 
@@ -72,7 +72,7 @@
     border-radius: 12px 12px 0 12px;
     color: #646F87;
     background-color: rgba(#646f87, 0.1);
-    transition: background-color 200ms, color 200ms;
+    transition: background-color 350ms, color 350ms;
 
     svg {
       max-width: 28px;
@@ -106,7 +106,7 @@
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 400;
-    transition: color 200ms;
+    transition: color 350ms;
     @include truncated-text(2);
 
     @include media-breakpoint-up(lg) {
@@ -118,7 +118,7 @@
 
   &__description {
     color: $medium-blue;
-    transition: color 200ms;
+    transition: color 350ms;
   }
 }
 
@@ -130,6 +130,7 @@
   .services-card:hover {
     border-color: transparent;
     background-color: #0F1542;
+    transform: translate(-5px, -12px);
   }
 
   .services-card:hover::before {

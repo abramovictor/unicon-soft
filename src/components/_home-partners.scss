@@ -9,6 +9,7 @@
   border-radius: 6px;
   background-color: #fff;
   border: 1px solid rgba(#646F87, 0.24);
+  transition: transform 350ms;
 
   &::before {
     content: '';
@@ -68,6 +69,10 @@
 }
 
 .section-swiper:not(.swiper-container-initialized) {
+  .partners-card:hover {
+    transform: translate(-3px, -6px);
+  }
+
   .partners-card:hover::before {
     opacity: 1;
   }
