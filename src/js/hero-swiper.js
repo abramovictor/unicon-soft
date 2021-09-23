@@ -8,7 +8,6 @@
   const swiper = new Swiper(swiperElement, {
     loop: true,
 
-    // If we need pagination
     pagination: {
       el: '#hero-swiper .swiper-pagination',
       type: 'custom',
@@ -28,7 +27,6 @@
       },
     },
 
-    // Navigation arrows
     navigation: {
       nextEl: '#hero-swiper .swiper-button-next',
       prevEl: '#hero-swiper .swiper-button-prev',
